@@ -1,16 +1,25 @@
 {
-  "name": "youtube",
+  "name": "week_09",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.3.6",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.0.1",
     "express": "^4.17.1",
-    "mongoose": "^5.12.8"
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.9",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
