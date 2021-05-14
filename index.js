@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const { db } = require('./comments');
-import axios from 'axios';
+//import axios from 'axios';
 
 
 
@@ -26,7 +26,6 @@ app.get('/', (req, res) => {
     .then(results => {
         console.log(results)
     })
-    .catch(error => console.error(error))
 })
 
 app.post('/videos', (req, res) => {
@@ -34,5 +33,4 @@ app.post('/videos', (req, res) => {
         .then(result => {
             res.direct('/')
     })
-    .catch(error => console.error(error))
 })
